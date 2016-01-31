@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" prefHeight="357.0" prefWidth="355.0" vgap="10" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="356.0" GridPane.columnIndex="1">
+         <children>
+            <Button fx:id="butButton1" layoutX="22.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleButton1" text="Button 1" />
+            <Button fx:id="butButton2" layoutX="134.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleButton2" text="Button 2" />
+            <Label fx:id="labLabel" layoutX="33.0" layoutY="87.0" prefHeight="27.0" prefWidth="101.0" text="Label" />
+            <Button fx:id="butQuit" layoutX="269.0" layoutY="238.0" mnemonicParsing="false" onAction="#handleQuit" text="Quit" />
+            <DatePicker layoutX="11.0" layoutY="122.0" promptText="Select date" />
+            <Button fx:id="butButton3" mnemonicParsing="false" onAction="#handleButton3" text="Button 3">
+               <padding>
+                  <Insets bottom="50.0" left="30.0" right="10.0" top="200.0" />
+               </padding>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
